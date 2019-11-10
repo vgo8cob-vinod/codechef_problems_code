@@ -34,7 +34,7 @@ int main()
         }
         s.push_back(k);
      }
-    int temp = 0;
+    int temp = s[0];
     for(int po=0;po<(s.size()-1);po++)
     {
         s[po+1]= s[po] ^ s[po+1];
