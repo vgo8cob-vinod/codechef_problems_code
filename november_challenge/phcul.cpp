@@ -71,12 +71,20 @@ for(auto val:mn)
     auto it =min_element(b.begin(),b.end());
     auto k = distance(b.begin(),it);
     cout<<(val.arr[0])[k].first<<","<<(val.arr[0])[k].second<<endl;
+
     vector<long double> c;
     transform(val.arr[1].begin(),val.arr[1].end(),back_inserter(c),dis);
     auto it1 =min_element(c.begin(),c.end());
     auto k1 = distance(c.begin(),it1);
     cout<<(val.arr[1])[k1].first<<","<<(val.arr[1])[k1].second<<endl;
-    cout<<min(*it,*it1)<<endl;
+    //cout<<min(*it,*it1)<<endl;
+
+    vector<long double> d;
+    transform(val.arr[2].begin(),val.arr[2].end(),back_inserter(d),dis);
+    auto it2 =min_element(d.begin(),d.end());
+    auto k2 = distance(d.begin(),it2);
+    cout<<(val.arr[2])[k2].first<<","<<(val.arr[2])[k2].second<<endl;
+    //cout<<min(*it,*it1)<<endl;
 }
 
 return 0;
